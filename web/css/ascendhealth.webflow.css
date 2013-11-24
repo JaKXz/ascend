@@ -5,7 +5,7 @@ body {
   line-height: 20px;
 }
 h1 {
-  margin: 10px 0px;
+  margin: 0px 0px 10px;
   font-size: 38px;
   line-height: 44px;
   font-weight: 700;
@@ -43,6 +43,7 @@ h6 {
 }
 p {
   margin-bottom: 5px;
+  padding-bottom: 20px;
   font-family:'Varela Round', sans-serif;
   color: #848999;
 }
@@ -83,12 +84,11 @@ p {
 .section {
   padding-top: 65px;
   padding-bottom: 65px;
-  background-color: #f7f8fa;
 }
 .section.header {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: white;
+  background-color: #2e323d;
 }
 .section.hero {
   padding-top: 55px;
@@ -97,7 +97,7 @@ p {
   text-align: center;
 }
 .section.grey {
-  background-color: white;
+  background-color: #eff1f4;
   text-align: center;
 }
 .section.centered {
@@ -110,7 +110,7 @@ p {
 .company {
   display: inline-block;
   font-family: Montserrat, sans-serif;
-  color: black;
+  color: white;
   font-size: 31px;
   font-weight: 700;
 }
@@ -121,7 +121,7 @@ p {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
   font-family: Montserrat, sans-serif;
-  color: black;
+  color: rgba(255, 255, 255, 0.81);
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -150,7 +150,6 @@ p {
   font-size: 14px;
 }
 .section-title {
-  background-color: rgba(0, 0, 0, 0);
   font-family: Montserrat, sans-serif;
   font-size: 29px;
   font-weight: 400;
@@ -170,7 +169,7 @@ p {
   margin-right: 9px;
 }
 .content-column {
-  padding-top: 79px;
+  padding-top: 20px;
   text-align: left;
 }
 .circle {
