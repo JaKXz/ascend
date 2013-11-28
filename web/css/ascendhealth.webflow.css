@@ -5,7 +5,11 @@ body {
   line-height: 20px;
 }
 h1 {
-  margin: 0px 0px 10px;
+  position: static;
+  overflow: visible;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Lato, sans-serif;
   font-size: 38px;
   line-height: 44px;
   font-weight: 700;
@@ -44,8 +48,9 @@ h6 {
 p {
   margin-bottom: 5px;
   padding-bottom: 20px;
+  clear: none;
   font-family:'Varela Round', sans-serif;
-  color: #848999;
+  color: black;
 }
 .button {
   display: inline-block;
@@ -174,10 +179,15 @@ p {
 }
 .circle {
   height: 303px;
+  margin-right: 28px;
   margin-bottom: 25px;
-  padding-top: 21px;
-  border-radius: 190px;
+  margin-left: 28px;
+  padding: 10px;
+  border-radius: 200px;
   background-color: #f7f8fa;
+}
+.frames {
+  border-radius: 1px;
 }
 .number {
   display: block;
@@ -264,6 +274,13 @@ p {
 .right-footer-col {
   text-align: right;
 }
+.ribbon-column {
+  position: relative;
+  left: 0px;
+  top: 10px;
+  right: 0px;
+  display: block;
+}
 @media (max-width: 991px) {
   .button.nav {
     margin-left: 11px;
@@ -296,6 +313,9 @@ p {
     margin-bottom: 10px;
     padding-top: 4px;
     font-size: 15px;
+  }
+  .ribbon-column {
+    top: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -341,7 +361,6 @@ p {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 20px;
-    border-radius: 10px;
   }
   .frames {
     width: 55%;
@@ -349,6 +368,10 @@ p {
   }
   .number {
     margin-bottom: 20px;
+  }
+  .icons {
+    margin-bottom: 10px;
+    padding-bottom: 0px;
   }
   .quote-box {
     background-image: url(../images/fede6c82-bef1-4b40-a4cd-f1045405d3c5_12-quotes.png);
@@ -366,6 +389,9 @@ p {
   }
   .right-footer-col {
     text-align: center;
+  }
+  .swto-reference:active {
+    text-decoration: none;
   }
 }
 @media (max-width: 479px) {
@@ -392,6 +418,9 @@ p {
   }
   .content-column {
     text-align: center;
+  }
+  .circle {
+    border-radius: 200px;
   }
   .frames {
     width: 75%;

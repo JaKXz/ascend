@@ -757,7 +757,10 @@ Webflow.define('webflow-scroll', function ($) {
       if (Webflow.env('design')) {
         return;
       }
-
+      
+      // Ignore links being used by jQuery mobile
+      if (window.$.mobile && $(e.currentTarget).hasClass('ui-link')) return;
+      
       var hash = this.hash ? this.hash.substring(1) : null;
       if (hash) {
         findEl(hash, e);
