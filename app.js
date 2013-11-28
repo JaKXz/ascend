@@ -12,5 +12,5 @@ app.get('/', function(req, res){
 });
 
 app.get('/team', function(req, res){
-    res.sendfile(__dirname + '/team.html');
+    res.sendfile(__dirname + '/web/team.html');
 });
